@@ -14,8 +14,7 @@ services:
       - app-network
     volumes:
       - ./logs/nginx:/var/log/nginx
-      - /etc/letsencrypt/live/www.nacionalbrasil.site:/etc/letsencrypt/live/www.nacionalbrasil.site:ro
-      - /etc/letsencrypt/archive/www.nacionalbrasil.site:/etc/letsencrypt/archive/www.nacionalbrasil.site:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     environment:
       - NODE_ENV=production
 
