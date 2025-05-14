@@ -8,11 +8,14 @@ services:
     container_name: macho-power
     ports:
       - "80:80"
+      - "443:443"
     restart: always
     networks:
       - app-network
     volumes:
       - ./logs/nginx:/var/log/nginx
+      - /etc/letsencrypt/live/www.nacionalbrasil.site:/etc/letsencrypt/live/www.nacionalbrasil.site:ro
+      - /etc/letsencrypt/archive/www.nacionalbrasil.site:/etc/letsencrypt/archive/www.nacionalbrasil.site:ro
     environment:
       - NODE_ENV=production
 
