@@ -79,7 +79,7 @@ function App() {
           Método 100% natural restaura sua energia vital em apenas 7 dias - Usado por mestres orientais por gerações
         </p>
         <div className="relative w-full max-w-4xl mx-auto aspect-video mb-8 rounded-lg overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 pointer-events-none"></div>
           <iframe 
             width="100%" 
             height="100%" 
@@ -88,9 +88,9 @@ function App() {
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full z-20"
           ></iframe>
-          <div className="absolute bottom-4 left-4 z-20 bg-red-600 px-4 py-2 rounded-full text-sm font-bold animate-bounce">
+          <div className="absolute bottom-4 left-4 z-30 bg-red-600 px-4 py-2 rounded-full text-sm font-bold animate-bounce pointer-events-none">
             Assista Agora!
           </div>
         </div>
