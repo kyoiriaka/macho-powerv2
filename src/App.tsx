@@ -90,9 +90,6 @@ function App() {
             allowFullScreen
             className="absolute inset-0 w-full h-full z-20"
           ></iframe>
-          <div className="absolute bottom-4 left-4 z-30 bg-red-600 px-4 py-2 rounded-full text-sm font-bold animate-bounce pointer-events-none">
-            Assista Agora!
-          </div>
         </div>
         <div className="space-y-4">
           <a 
@@ -193,7 +190,7 @@ function App() {
           <div className="bg-black p-8 rounded-lg border-2 border-red-500">
             <h3 className="text-2xl font-bold mb-4">Manual Secreto: 7 Técnicas Ancestrais</h3>
             <p className="text-xl mb-4">
-              <span className="line-through text-gray-500">Valor: R$497,00</span>
+              <span className="line-through text-gray-500">Valor: R$89,90</span>
               <span className="block text-red-500 font-bold mt-2">GRÁTIS para os primeiros 50 inscritos!</span>
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
